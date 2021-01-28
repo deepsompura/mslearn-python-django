@@ -111,7 +111,7 @@ stages:
             displayName: 'Run functional tests'
 
           - task: PublishTestResults@2
-          inputs:
-            searchFolder: $(Pipeline.Workspace)
-            testResultsFiles: '**/test-*.xml'
-          displayName: 'Publish test results'
+            inputs:
+              searchFolder: $(Pipeline.Workspace)
+              testResultsFiles: '**/test-*.xml'
+            displayName: 'Publish test results'
